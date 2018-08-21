@@ -1,0 +1,48 @@
+{
+    "name": "ptx/lumen-yaml-swagger",
+    "type": "library",
+    "description": "Swagger文档，用PHP注释可读性差，维护性差，使用YAML格式",
+    "keywords": [
+        "Lumen",
+        "PtxTech",
+        "Swagger",
+        "YAML"
+    ],
+    "homepage": "https://github.com/putianxin/lumen-yaml-swagger.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ptx",
+            "email": "putianxin@vip.qq.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.1.3",
+        "darkaonline/swagger-lume": "^5.5",
+        "laravel/lumen-framework": "^5.5",
+        "symfony/yaml": "^4.1"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "7.0.*",
+        "mockery/mockery": "~1.0",
+        "satooshi/php-coveralls": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PtxDev\\Swagger\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "prefer-stable": true
+}
