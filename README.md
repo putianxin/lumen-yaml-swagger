@@ -28,13 +28,17 @@ composer require --dev ptx/lumenyaml-swagger
     ```php
         $app->register(\PtxDev\Swagger\SwaggerLumenServiceProvider::class);
     ```
-- 配置YAML目录 `config/swagger-lume.php`：
-    ````php
-    [
-        "paths" => [
-            "yamlAnnotations" => [base_path('docs')] // 默认目录
-        ]
-    ]
-    ````
-
+    
+#### `app/Providers/AppServiceProviders.php`   
+- 添加默认@SWG/Info
+    ```php
+      /**
+       * @SWG\Swagger(
+       *   @SWG\Info(
+       *     title="My first swagger documented API",
+       *     version="1.0.0"
+       *   )
+       * )
+       */
+    ```
 #### 其它使用见 [SwaggerLume](https://github.com/DarkaOnLine/SwaggerLume) 文档
